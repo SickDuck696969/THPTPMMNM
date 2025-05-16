@@ -1,0 +1,184 @@
+/* Color Palette */
+:root {
+    --redhood-primary: #c1272d; /* Deep crimson red */
+    --redhood-secondary: #1a1a1a; /* Dark black */
+    --redhood-accent: #d4af37; /* Metallic gold */
+    --redhood-highlight: #e63946; /* Bright red highlight */
+    --redhood-text: #f5f5f5; /* Off-white text */
+    --redhood-dark-text: #333333; /* Dark text for light backgrounds */
+  }
+  
+  /* Base Styles */
+  body {
+    background-color: var(--redhood-secondary);
+    color: var(--redhood-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: var(--redhood-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--redhood-highlight);
+  }
+  
+  /* Header/Navigation */
+  .header {
+    background-color: var(--redhood-primary);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--redhood-accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Product List Table */
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: rgba(26, 26, 26, 0.8);
+    border: 1px solid var(--redhood-accent);
+  }
+  
+  .product-table th {
+    background-color: var(--redhood-primary);
+    color: var(--redhood-accent);
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .product-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  }
+  
+  .product-table tr:hover {
+    background-color: rgba(193, 39, 45, 0.2);
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: var(--redhood-primary);
+    color: var(--redhood-text);
+    border: 1px solid var(--redhood-highlight);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--redhood-highlight);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(230, 57, 70, 0.3);
+  }
+  
+  .btn-accent {
+    background-color: transparent;
+    color: var(--redhood-accent);
+    border: 1px solid var(--redhood-accent);
+  }
+  
+  .btn-accent:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+  }
+  
+  /* Forms */
+  .form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(26, 26, 26, 0.9);
+    border: 1px solid var(--redhood-accent);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(193, 39, 45, 0.2);
+  }
+  
+  .form-title {
+    color: var(--redhood-accent);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--redhood-accent);
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.1);
+    border: 1px solid var(--redhood-primary);
+    color: var(--redhood-text);
+    border-radius: 4px;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--redhood-accent);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
+  }
+  
+  /* Utility Classes */
+  .text-accent {
+    color: var(--redhood-accent);
+  }
+  
+  .text-highlight {
+    color: var(--redhood-highlight);
+  }
+  
+  .bg-dark {
+    background-color: var(--redhood-secondary);
+  }
+  
+  .bg-darker {
+    background-color: #111;
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(230, 57, 70, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
